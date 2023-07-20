@@ -1,12 +1,14 @@
 import express from 'express';
-import geoFeaturesService from '../services/geofeatures.service';
+import GeoFeaturesService from '../services/geofeatures.service';
 
 class GeoFeaturesController {
   async getFeaturesByBbox(req: express.Request, res: express.Response) {
-    const geoJSONFeatures = await geoFeaturesService.getByBbox(req.body);
-    
+    const geoJSONFeatures = await GeoFeaturesService.getByBbox(req.body);
+
     if (geoJSONFeatures instanceof Error) res.status(400).send(geoJSONFeatures)
     else res.status(200).send(geoJSONFeatures);
+
+    // res.status(200).send(geoJSONFeatures);
   }
 }
 

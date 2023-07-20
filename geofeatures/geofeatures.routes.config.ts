@@ -11,7 +11,7 @@ export class GeoFeaturesRoutes extends CommonRoutesConfig {
 
     configureRoutes(): express.Application {
       this.app
-      .route(`/geo-features`)
+      .route(`/api/geo-features`)
       .post(
         // Validate input using express-validator
         body('minLongitude').isString(),
