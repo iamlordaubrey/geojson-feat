@@ -8,6 +8,7 @@
     "debug": "export DEBUG=* && npm run start",
     "dev": "export DEBUG=* && nodemon app.ts",
     "test": "jest --coverage --detectOpenHandles",
+    "test-debug": "export DEBUG=* && npm run test",
     "test:watch": "jest --watch"
   },
   "author": "",
@@ -30,6 +31,9 @@
     "@types/express": "^4.17.17",
     "@types/jest": "^29.5.3",
     "@types/supertest": "^2.0.12",
+    "chai": "^4.3.7",
+    "chai-http": "^4.4.0",
+    "cross-fetch": "^4.0.0",
     "jest": "^29.6.1",
     "msw": "^1.2.3",
     "nock": "^13.3.2",

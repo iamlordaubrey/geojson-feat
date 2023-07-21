@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1689881179214" clover="3.2.0">
-  <project timestamp="1689881179214" name="All files">
-    <metrics statements="68" coveredstatements="63" conditionals="10" coveredconditionals="4" methods="15" coveredmethods="13" elements="93" coveredelements="80" complexity="0" loc="68" ncloc="68" packages="6" files="6" classes="6"/>
+<coverage generated="1689899625296" clover="3.2.0">
+  <project timestamp="1689899625296" name="All files">
+    <metrics statements="78" coveredstatements="72" conditionals="8" coveredconditionals="4" methods="16" coveredmethods="13" elements="102" coveredelements="89" complexity="0" loc="78" ncloc="78" packages="7" files="8" classes="8"/>
     <package name="geojson">
       <metrics statements="30" coveredstatements="28" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="2"/>
       <file name="app.ts" path="/Users/chiemekaalim/ws/interview/airsiders/geojson/app.ts">
@@ -50,14 +50,14 @@
       </file>
     </package>
     <package name="geojson.common.middleware">
-      <metrics statements="6" coveredstatements="5" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="body.validation.middleware.ts" path="/Users/chiemekaalim/ws/interview/airsiders/geojson/common/middleware/body.validation.middleware.ts">
-        <metrics statements="6" coveredstatements="5" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="cond" truecount="0" falsecount="1"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
       </file>
     </package>
@@ -80,19 +80,19 @@
       <file name="geofeatures.controller.ts" path="/Users/chiemekaalim/ws/interview/airsiders/geojson/geofeatures/controllers/geofeatures.controller.ts">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
       </file>
     </package>
     <package name="geojson.geofeatures.services">
-      <metrics statements="14" coveredstatements="12" conditionals="5" coveredconditionals="2" methods="6" coveredmethods="5"/>
+      <metrics statements="14" coveredstatements="12" conditionals="3" coveredconditionals="1" methods="6" coveredmethods="5"/>
       <file name="geofeatures.service.ts" path="/Users/chiemekaalim/ws/interview/airsiders/geojson/geofeatures/services/geofeatures.service.ts">
-        <metrics statements="14" coveredstatements="12" conditionals="5" coveredconditionals="2" methods="6" coveredmethods="5"/>
+        <metrics statements="14" coveredstatements="12" conditionals="3" coveredconditionals="1" methods="6" coveredmethods="5"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="1" type="stmt"/>
         <line num="13" count="1" type="cond" truecount="0" falsecount="1"/>
         <line num="17" count="2" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
@@ -104,6 +104,25 @@
         <line num="28" count="0" type="stmt"/>
         <line num="32" count="2" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="geojson.test">
+      <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="mocks.ts" path="/Users/chiemekaalim/ws/interview/airsiders/geojson/test/mocks.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+      <file name="server.ts" path="/Users/chiemekaalim/ws/interview/airsiders/geojson/test/server.ts">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
       </file>
     </package>
   </project>

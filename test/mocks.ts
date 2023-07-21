@@ -15,3 +15,24 @@ export const goodResponse = `<?xml version="1.0" encoding="UTF-8"?>
    <bounds minlat="50.8531400" minlon="4.3705100" maxlat="50.8572700" maxlon="4.3804900"/>
  </osm>
   `;
+
+export const validBoundingBox = {
+  "minLongitude": "3.3774",
+  "minLatitude": "6.5619",
+  "maxLongitude": "3.4173",    
+  "maxLatitude": "6.5879"
+};
+
+export const invalidBoundingBox = {
+  "invalidKey": "3.3774",
+  "minLatitude": "6.5619",
+  "maxLongitude": "3.4173",    
+  "maxLatitude": "6.5879"
+};
+
+export const zeroesBoundingBox = {
+  "minLongitude": "1",
+  "minLatitude": "1",
+  "maxLongitude": "1",    
+  "maxLatitude": "1"
+};

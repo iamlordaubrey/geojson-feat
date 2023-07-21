@@ -8,8 +8,8 @@ interface BoundingBox {
   maxLatitude: string;
 }
 
-const open_street_map_api = process.env.OPEN_STREET_MAP_API || "https://www.openstreetmap.org/api/0.6/map" ;
-// const open_street_map_api = process.env.OPEN_STREET_MAP_API;
+// const open_street_map_api = process.env.OPEN_STREET_MAP_API || "https://www.openstreetmap.org/api/0.6/map" ;
+const open_street_map_api = process.env.OPEN_STREET_MAP_API;
 if (!open_street_map_api) throw new Error(`Environment variable "open_street_map_api" is undefined.`);
 
 class GeoFeaturesService {
@@ -17,7 +17,7 @@ class GeoFeaturesService {
     const bBoxString: string = `${bbox.minLongitude},${bbox.minLatitude},${bbox.maxLongitude},${bbox.maxLatitude}`
     const url = `${open_street_map_api}?bbox=${bBoxString}`
 
-    return fetch(url, {method: 'GET'})
+    return fetch(url, {method: "GET"})
     .then(async (response) => {
       if (response.ok) return response.text();
       else throw await response.text();
@@ -29,7 +29,7 @@ class GeoFeaturesService {
   }
 
   parseXml(xmlString: string): Document {
-    return new DOMParser().parseFromString(xmlString, 'text/xml')
+    return new DOMParser().parseFromString(xmlString, "text/xml")
   }
 }
 

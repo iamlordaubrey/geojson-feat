@@ -1,4 +1,6 @@
-module.exports = {
+import type { Config } from 'jest';
+
+const config: Config = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   transform: {
@@ -6,5 +8,8 @@ module.exports = {
   },
   transformIgnorePatterns: ['<rootDir>/node_modules/'],
   modulePathIgnorePatterns: ["<rootDir>/dist/"],
-  testTimeout: 20000
+  setupFilesAfterEnv: ["dotenv/config"],
+  // testTimeout: 20000
 };
+
+export default config;
